@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opérateur Mobile</title>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script>
+    // Script pour ouvrir et fermer le menu mobile
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      
+    }
+  </script>
+  <style>
+    .background {
+      background-image: url(./1609.m00.i125.n002.P.c25.345947435_Vector_wireframe_connecting_earth_sphere._Globe_connection_concept-removebg-preview.png); /* Remplace l'URL par celle de ton image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Optionnel, permet à l'image de rester fixe lors du défilement */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Section Header -->
+  <header class="bg-blue-600 text-white p-4 shadow-xl" >
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">MoMo Mobile</h1>
+
+      <!-- Bouton Menu Hamburger pour mobile -->
+      <button class="lg:hidden text-2xl" onclick="toggleMenu()">
+        <span>&#9776;</span>
+      </button>
+
+      <!-- Menu Principal -->
+      <nav class="hidden lg:flex space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-blue-200">Accueil</a></li>
+          <li><a href="#offres" class="hover:text-blue-200">Offres</a></li>
+          <li><a href="#" class="hover:text-blue-200">Services</a></li>
+          <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menu Mobile (hidden by default) -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-blue-600 text-white p-4">
+    <ul class="space-y-4">
+      <li><a href="#" class="hover:text-blue-200">Accueil</a></li>
+      <li><a href="#offres" class="hover:text-blue-200">Offres</a></li>
+      <li><a href="#" class="hover:text-blue-200">Services</a></li>
+      <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-800 text-white text-center py-20">
+    <h2 class="text-3xl md:text-4xl font-semibold">Bienvenue chez votre opérateur mobile</h2>
+    <p class="mt-4 text-lg md:text-xl">Des offres mobiles adaptées à vos besoins, avec une couverture fiable et des prix compétitifs.</p>
+    <div class="mt-6">
+      <a href="#offres" class="bg-yellow-500 text-blue-900 py-2 px-6 rounded-full hover:bg-yellow-400">Découvrez nos offres</a>
+    </div>
+  </section>
+
+  <!-- Offres Section -->
+  <section id="offres" class="container mx-auto py-16 px-4">
+    <h3 class="text-3xl text-center font-semibold mb-8">Nos offres mobiles</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <h4 class="text-2xl font-semibold">Forfait 10GB</h4>
+        <p class="mt-4 text-lg">10 GB de données, appels illimités vers les fixes et mobiles</p>
+        <div class="mt-4">
+          <a href="#" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-500">Souscrire</a>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <h4 class="text-2xl font-semibold">Forfait 50GB</h4>
+        <p class="mt-4 text-lg">50 GB de données, appels illimités et SMS illimités</p>
+        <div class="mt-4">
+          <a href="#" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-500">Souscrire</a>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <h4 class="text-2xl font-semibold">Forfait Illimité</h4>
+        <p class="mt-4 text-lg">Données, appels et SMS illimités</p>
+        <div class="mt-4">
+          <a href="#" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-500">Souscrire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2024 Opérateur Mobile. Tous droits réservés.</p>
+    <div class="mt-4">
+      <a href="#" class="hover:text-blue-400">Mentions légales</a> | 
+      <a href="#" class="hover:text-blue-400">Politique de confidentialité</a>
+    </div>
+  </footer>
+
+</body>
+</html>
